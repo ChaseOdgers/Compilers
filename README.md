@@ -1,6 +1,6 @@
 # Compilers EECS 665 
 Spring 2021, remote. |
-Course taught by Drew Davidson  |
+Course taught by Dr.Drew Davidson at the University of Kansas |
 Course Site: https://compilers.cool/
 
 Project-1:
