@@ -1,6 +1,6 @@
-# Compilers EECS 665
-Spring 2021, remote.
-Course taught by Drew Davidson
+# Compilers EECS 665 
+Spring 2021, remote. |
+Course taught by Drew Davidson  |
 Course Site:https://compilers.cool/
 
 Project-1:
