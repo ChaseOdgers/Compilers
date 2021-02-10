@@ -1,7 +1,7 @@
 # Compilers EECS 665 
 Spring 2021, remote. |
 Course taught by Drew Davidson  |
-Course Site:https://compilers.cool/
+Course Site: https://compilers.cool/
 
 Project-1:
   Beginning of construction for compiler named cronac for the custom C-rona langauge. 
