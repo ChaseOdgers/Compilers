@@ -1,0 +1,11 @@
+1:1 ***WARNING*** Comment Ignored
+9:0 ***WARNING*** Comment Ignored
+FATAL [10,0]: Integer literal too large;  using max value
+14:0 ***WARNING*** Comment Ignored
+48:0 ***WARNING*** Comment Ignored
+50:0 ***WARNING*** Comment Ignored
+FATAL [55,0]: Unterminated string literal ignored
+FATAL [56,0]: Unterminated string literal ignored
+FATAL [57,0]: Unterminated string literal ignored
+FATAL [57,46]: Unterminated string literal ignored
+FATAL [58,0]: Unterminated string literal ignored

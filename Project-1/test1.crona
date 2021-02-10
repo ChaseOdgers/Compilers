@@ -1,0 +1,58 @@
+//CHASE ODGERS TEST CASES
+thisisanId
+ thisis1moreId
+		THISIDHAS2TABS
+while1
+This_Is_An_ID_With_BOOL_in_it_Testing_Substring
+123
+1
+//Testing overflow
+1222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+int
+bool
+byte
+//Testing multiple in one line
+string void if else "&!88"
+void
+if
+HERESANOTHERID
+else
+while
+return
+array
+true
+false
+read
+write
+havoc
+[]
+{}
+()
+;
+:
+,
+-
+--
++
+++
+*
+/
+!
+=
+==
+!=
+<=
+>=
+&&
+||
+//STRINGLITERALSBELOW
+""
+//TESTING COMMENTS HERE AND WHITESPACE BELOW
+
+"&!88"
+"use \n to denote a newline character"
+"use \" to  for a quote and \\ for a backslash"
+"unterminated
+"also unterminated \"
+"backslash followed by space: \ is not allowed"
+"bad escaped character: \a AND not terminated
