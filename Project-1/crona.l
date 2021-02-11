@@ -77,17 +77,17 @@ havoc	 	{ return makeBareToken(TokenKind::HAVOC); 	}
 "-"		{ return makeBareToken(TokenKind::DASH); 	}
 "--" 		{ return makeBareToken(TokenKind::DASHDASH); 	}
 "+" 		{ return makeBareToken(TokenKind::CROSS); 	}
-"++" 		{ return makeBareToken(TokenKind::CROSSCROSS);}
+"++" 		{ return makeBareToken(TokenKind::CROSSCROSS);	}
 "*" 		{ return makeBareToken(TokenKind::STAR); 	}
 "/" 		{ return makeBareToken(TokenKind::SLASH); 	}
 "!" 		{ return makeBareToken(TokenKind::NOT); 	}
 "=" 		{ return makeBareToken(TokenKind::ASSIGN); 	}
 "==" 		{ return makeBareToken(TokenKind::EQUALS); 	}
-"!="		{ return makeBareToken(TokenKind::NOTEQUALS); }
+"!="		{ return makeBareToken(TokenKind::NOTEQUALS); 	}
 "<=" 		{ return makeBareToken(TokenKind::LESSEQ); 	}
-">=" 		{ return makeBareToken(TokenKind::GREATEREQ); }
+">=" 		{ return makeBareToken(TokenKind::GREATEREQ); 	}
 "&&" 		{ return makeBareToken(TokenKind::AND); 	}
-"||" 		{ return makeBareToken(TokenKind::OR); 	}
+"||" 		{ return makeBareToken(TokenKind::OR); 		}
 
 
 	/* Comments */
