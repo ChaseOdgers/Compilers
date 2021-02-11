@@ -55,7 +55,7 @@ void		{ return makeBareToken(TokenKind::VOID); 	}
 if 		{ return makeBareToken(TokenKind::IF); 	}
 else	 	{ return makeBareToken(TokenKind::ELSE); 	}
 while	 	{ return makeBareToken(TokenKind::WHILE); 	}
-return 	{ return makeBareToken(TokenKind::RETURN); 	}
+return 		{ return makeBareToken(TokenKind::RETURN); 	}
 array		{ return makeBareToken(TokenKind::ARRAY); 	}
 true 		{ return makeBareToken(TokenKind::TRUE); 	}
 false		{ return makeBareToken(TokenKind::FALSE); 	}
