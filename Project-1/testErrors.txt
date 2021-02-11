@@ -1,11 +1,7 @@
-1:1 ***WARNING*** Comment Ignored
-9:0 ***WARNING*** Comment Ignored
-FATAL [10,0]: Integer literal too large;  using max value
-14:0 ***WARNING*** Comment Ignored
-48:0 ***WARNING*** Comment Ignored
-50:0 ***WARNING*** Comment Ignored
-FATAL [55,0]: Unterminated string literal ignored
-FATAL [56,0]: Unterminated string literal ignored
-FATAL [57,0]: Unterminated string literal ignored
-FATAL [57,46]: Unterminated string literal ignored
-FATAL [58,0]: Unterminated string literal ignored
+FATAL [10,1]: Integer literal too large;  using max value
+FATAL [48,1]: String literal with bad escape sequence ignored
+FATAL [49,1]: Unterminated string literal  with bad escape sequence ignored
+FATAL [58,1]: Unterminated string literal ignored
+FATAL [59,1]: Unterminated string literal ignored
+FATAL [60,1]: String literal with bad escape sequence ignored
+FATAL [61,1]: Unterminated string literal  with bad escape sequence ignored

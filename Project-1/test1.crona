@@ -45,6 +45,9 @@ havoc
 >=
 &&
 ||
+"\q"
+"verybadstring \
+abc
 //STRINGLITERALSBELOW
 ""
 //TESTING COMMENTS HERE AND WHITESPACE BELOW
@@ -56,3 +59,4 @@ havoc
 "also unterminated \"
 "backslash followed by space: \ is not allowed"
 "bad escaped character: \a AND not terminated
+
