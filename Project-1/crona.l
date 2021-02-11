@@ -52,7 +52,7 @@ bool		{ return makeBareToken(TokenKind::BOOL); 	}
 byte		{ return makeBareToken(TokenKind::BYTE); 	}
 string		{ return makeBareToken(TokenKind::STRING); 	}
 void		{ return makeBareToken(TokenKind::VOID); 	}
-if 		{ return makeBareToken(TokenKind::IF); 	}
+if 		{ return makeBareToken(TokenKind::IF); 		}
 else	 	{ return makeBareToken(TokenKind::ELSE); 	}
 while	 	{ return makeBareToken(TokenKind::WHILE); 	}
 return 		{ return makeBareToken(TokenKind::RETURN); 	}
