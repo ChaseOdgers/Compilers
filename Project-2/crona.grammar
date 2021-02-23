@@ -1,0 +1,70 @@
+/*********************************************************************
+ Grammar for C-Rona programs
+ ********************************************************************/
+program         ::= globals                          DONE
+globals         ::= globals decl                     DONE
+                | /* epsilon */                      DONE
+decl            ::= varDecl SEMICOLON                DONE
+                | fnDecl                             DONE
+varDecl         ::= id COLON type                    DONE
+type            ::= INT                              DONE
+		|   INT ARRAY LBRACE INTLITERAL RBRACE           DONE
+                |   BOOL                             DONE
+		|   BOOL ARRAY LBRACE INTLITERAL RBRACE          DONE
+                |   BYTE                             DONE
+		|   BYTE ARRAY LBRACE INTLITERAL RBRACE          DONE
+                |   STRING                           DONE
+                |   VOID                             DONE
+fnDecl          ::= id COLON type formals fnBody     DONE
+formals         ::= LPAREN RPAREN                    DONE
+                | LPAREN formalsList RPAREN          DONE
+formalsList     ::= formalDecl                       DONE
+                | formalDecl COMMA formalsList       DONE
+formalDecl      ::= id COLON type                    DONE
+fnBody          ::= LCURLY stmtList RCURLY           DONE
+stmtList        ::= stmtList stmt                    DONE
+                | /* epsilon */                      DONE
+stmt            ::= varDecl SEMICOLON                DONE
+                | assignExp SEMICOLON                DONE
+                | lval DASHDASH SEMICOLON            DONE
+                | lval CROSSCROSS SEMICOLON          DONE
+                | READ lval SEMICOLON                DONE
+                | WRITE exp SEMICOLON                DONE
+                | IF LPAREN exp RPAREN LCURLY stmtList RCURLY     DONE
+                | IF LPAREN exp RPAREN LCURLY stmtList RCURLY ELSE LCURLY stmtList RCURLY     DONE
+                | WHILE LPAREN exp RPAREN LCURLY stmtList RCURLY  DONE
+                | RETURN exp SEMICOLON               DONE
+                | RETURN SEMICOLON                   DONE
+                | fncall SEMICOLON                   DONE
+assignExp       ::= lval ASSIGN exp                  DONE      
+fncall          ::=  id LPAREN RPAREN                DONE
+                | id LPAREN actualsList RPAREN       DONE
+actualsList     ::= exp                              DONE
+                | actualsList COMMA exp              DONE
+exp             ::= assignExp                        DONE
+                | exp DASH exp                       DONE
+                | exp CROSS exp                      DONE
+                | exp STAR exp                       DONE
+                | exp SLASH exp                      DONE
+                | exp AND exp                        DONE
+                | exp OR exp                         DONE
+                | exp EQUALS exp                     DONE
+                | exp NOTEQUALS exp                  DONE
+                | exp GREATER exp                    DONE
+                | exp GREATEREQ exp                  DONE
+                | exp LESS exp                       DONE
+                | exp LESSEQ exp                     DONE
+                | NOT exp                            DONE
+                | DASH term                          DONE
+                | term                               DONE
+term            ::= lval                             DONE
+                | INTLITERAL                         DONE
+                | STRLITERAL                         DONE
+                | TRUE                               DONE
+                | FALSE                              DONE
+                | HAVOC                              DONE
+                | LPAREN exp RPAREN                  DONE
+                | fncall                             DONE
+lval             ::= id                              DONE
+                | id LBRACE exp RBRACE               DONE
+id              ::= ID                               DONE

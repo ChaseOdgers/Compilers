@@ -1,0 +1,6 @@
+main : int () {
+  myVar: bool;
+  myVar = 1 < 2;
+  myVar2: int;
+  myVar2 = (1 + -2) + 3 - 4 * 5 / 6;
+}

@@ -1,0 +1,24 @@
+main : int () {
+  if (true) {
+    test: int;
+    test = 3;
+  }
+  if (false) {
+    test: int;
+    test = 4;
+  } else {
+    test2: bool;
+    test2 = true;
+  }
+  i++;
+  i--;
+  while (2 + 2) {
+    return 1 + 1;
+    return;
+  }
+  myFunc();
+  myFunc(3);
+  myFunc(1 + 2, "equals 3", myFunc2(2) + result);
+
+  return;
+}

@@ -1,0 +1,3 @@
+myFunc : int (varOne: int, varTwo: bool, varThree: byte array[1]) {}
+
+myFunc : int () {}
